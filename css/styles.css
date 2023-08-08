@@ -1,0 +1,121 @@
+/* root */
+
+/* Remember to use the images in the cards as href links.*/
+
+/* Also remember to include the customer profile just like in twitter profile. */
+
+:root {
+  --color-body: #807d7e;
+  --color-primary: #47acdf;
+  --color-headings: #3c4242;
+  --color-notifications: rgba(102, 102, 102, 0.8);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Buttons */
+
+/* Cards */
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(2, 100px);
+  border: 3px solid lightgrey;
+  align-items: center;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  align-items: stretch;
+  width: 100vh;
+}
+
+.navbar {
+  display: flex;
+  margin-top: 3.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  justify-content: space-between;
+}
+
+.navbar-images {
+  justify-self: flex-start;
+  width: 94px;
+  height: 45px;
+  display: inline-block;
+}
+
+.navbar-search {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.2rem;
+  justify-self: center;
+  border: none;
+  border-radius: 8px;
+  width: 18.4rem;
+  height: 4.6rem;
+  position: relative;
+  box-sizing: content-box;
+  justify-content: center;
+}
+
+.navbar-text {
+  font-size: 18px;
+  padding-right: 1.6rem;
+  color: var(--color-body);
+  outline: none;
+  box-sizing: content-box;
+  border: 0;
+  background-color: inherit;
+  width: 5.6rem;
+  height: 2.2rem;
+  margin-left: 1.2rem;
+}
+
+.navbar-icon {
+  object-fit: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar-login {
+  display: inline-flex;
+  border: none;
+  border-radius: 8px;
+  width: 18.4rem;
+  height: 5rem;
+  justify-content: center;
+  background-color: var(--color-primary);
+}
+
+.navbar-login-text {
+  display: inline-flex;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  align-self: center;
+}
+
+.navbar-signup {
+  display: inline-flex;
+  border-radius: 8px;
+  width: 18.4rem;
+  height: 5rem;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.navbar-signup-text {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin: 0;
+  align-self: center;
+}
+
+/* Icons */
+
+/* Footer */
