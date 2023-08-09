@@ -8,26 +8,71 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <img class="navbar-images" src="/images/cropped-image.png" alt="" />
+        <button class="navbar-search">
+          <div class="navbar-icon">
+            <img src="/images/search.svg" alt="" />
+          </div>
+          <input type="text" placeholder="Search" class="navbar-text" />
+        </button>
+        <button class="navbar-login">
+          <p class="navbar-login-text">Login</p>
+        </button>
+        <button class="navbar-signup">
+          <p class="navbar-signup-text">Sign Up</p>
+        </button>
+      </nav>
+    </header>
     <div class="container">
-      <header>
-        <nav class="navbar">
-          <img class="navbar-images" src="/images/cropped-image.png" alt="" />
-          <button class="navbar-search">
-            <div class="navbar-icon">
-              <img src="/images/search.svg" alt="" />
+      <main>
+        <div class="movie-image"><img src="/images/batman.png" alt="" /></div>
+        <div class="signin-page-column">
+          <p class="signin-page-text">Sign In Page</p>
+          <button class="google-signin">
+            <img src="/images/Google.svg" alt="" />
+            <p class="google-signin-text">Continue With Google</p>
+          </button>
+          <button class="twitter-signin">
+            <img src="/images/twitter.svg" alt="" />
+            <p class="twitter-signin-text">Continue With Twitter</p>
+          </button>
+          <div class="divider">
+            <div class="divider-left"></div>
+            <p class="divider-text">OR</p>
+            <div class="divider-right"></div>
+          </div>
+          <div class="username-password-field">
+            <div>
+              <p class="user-or-email-text">User name or email address</p>
             </div>
-            <input type="text" placeholder="Search" class="navbar-text" />
-          </button>
-          <button class="navbar-login">
-            <p class="navbar-login-text">Login</p>
-          </button>
-          <button class="navbar-signup">
-            <p class="navbar-signup-text">Sign Up</p>
-          </button>
-        </nav>
-      </header>
-      <main></main>
-      <footer></footer>
+            <button class="username-button">
+              <input
+                class="username-button-text"
+                type="text"
+                placeholder="Username"
+              />
+            </button>
+            <div class="password-text">
+              <p class="password">Password</p>
+              <div class="hide-container">
+                <img class="hide-image" src="/images/Hide view.svg" alt="" />
+                <p class="hide">Hide</p>
+              </div>
+            </div>
+            <button class="password-button">
+              <input
+                class="password-button-text"
+                type="text"
+                placeholder="Password"
+              />
+            </button>
+            <p class="forget-password">Forget Password</p>
+          </div>
+        </div>
+      </main>
     </div>
+    <footer></footer>
   </body>
 </html>

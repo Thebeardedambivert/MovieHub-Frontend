@@ -21,14 +21,14 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(4, 100px);
-  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: 50fr 50fr;
   border: 3px solid lightgrey;
-  align-items: center;
-  grid-auto-flow: row;
+  align-content: stretch;
   justify-content: stretch;
-  align-items: stretch;
-  width: 100vh;
+  height: 106.7rem;
+  width: 144rem;
+  margin-top: 3.1rem;
 }
 
 .navbar {
@@ -106,6 +106,7 @@ html {
   height: 5rem;
   justify-content: center;
   background-color: #fff;
+  border: 1px solid #3c4242;
 }
 
 .navbar-signup-text {
@@ -116,6 +117,205 @@ html {
   align-self: center;
 }
 
+.movie-image {
+  display: inline-flex;
+  width: 69.5rem;
+  height: 95.6rem;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+.signin-page-column {
+  display: flex;
+  flex-direction: column;
+  width: 56.8rem;
+  height: 61.4rem;
+  justify-content: space-around;
+  border: 3px solid lightgray;
+}
+
+.signin-page-text {
+  color: #333;
+  width: 21.8rem;
+  height: 3.3rem;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 0.068rem;
+}
+
+.google-signin {
+  display: inline-flex;
+  border-radius: 0.8rem;
+  border: 1px solid lightgrey;
+  width: 56.7rem;
+  height: 5.8rem;
+  justify-content: center;
+  align-content: center;
+  padding: 1.6rem 2rem;
+  background-color: #fff;
+}
+
+.google-signin-text {
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 1.2rem;
+  background-color: #fff;
+  margin: 0;
+}
+
+.twitter-signin {
+  display: inline-flex;
+  border-radius: 0.8rem;
+  border: 1px solid lightgrey;
+  width: 56.7rem;
+  height: 5.8rem;
+  justify-content: center;
+  align-content: center;
+  padding: 1.6rem 2rem;
+  background-color: #fff;
+}
+
+.twitter-signin-text {
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 1.2rem;
+  background-color: #fff;
+  margin: 0;
+}
+
+.divider {
+  display: inline-flex;
+  width: 56.8rem;
+  height: 1.8rem;
+  justify-content: space-between;
+}
+
+.divider-left {
+  width: 24.5rem;
+  height: 0.2rem;
+  background-color: lightgray;
+  align-self: center;
+}
+
+.divider-text {
+  color: #666;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.divider-right {
+  width: 24.5rem;
+  height: 0.2rem;
+  background-color: lightgray;
+  align-self: center;
+}
+
+.user-or-email-text {
+  color: var(--color-headings);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.036rem;
+}
+
+.username-password-field {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.username-button {
+  display: inline-flex;
+  border-radius: 0.8rem;
+  border: 1px solid lightgrey;
+  width: 56.7rem;
+  height: 5.8rem;
+  position: relative;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: #fff;
+}
+
+.username-button-text {
+  border: none;
+  font-size: 2.4rem;
+  background-color: inherit;
+  outline: none;
+  align-self: center;
+  letter-spacing: 0.08rem;
+}
+
+.password-text {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.password {
+  color: var(--color-headings);
+  width: 7.8rem;
+  height: 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.036rem;
+  align-self: flex-end;
+}
+
+.hide-container {
+  display: inline-flex;
+  background-color: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hide {
+  color: var(--color-body);
+  width: 7.8rem;
+  height: 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.036rem;
+}
+
+.hide-image {
+  width: 1.8188rem;
+  height: 1.5996rem;
+  padding-right: 2.4rem;
+}
+
+.password-button {
+  display: inline-flex;
+  border-radius: 0.8rem;
+  border: 1px solid lightgrey;
+  width: 56.7rem;
+  height: 5.8rem;
+  position: relative;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: #fff;
+}
+
+.password-button-text {
+  border: none;
+  font-size: 2.4rem;
+  background-color: inherit;
+  outline: none;
+  align-self: center;
+  letter-spacing: 0.08rem;
+}
 /* Icons */
 
 /* Footer */
