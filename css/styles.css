@@ -11,6 +11,10 @@
   --color-notifications: rgba(102, 102, 102, 0.8);
 }
 
+body {
+  margin: 10px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -21,9 +25,11 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(2, 100px);
-  grid-template-columns: 50fr 50fr;
-  border: 3px solid lightgrey;
+  grid-template-rows: repeat(3, 25fr);
+  grid-template-columns: repeat(2, 25fr);
+  /* border: 3px solid lightgrey; */
+  align-items: stretch;
+  justify-items: end;
   align-content: stretch;
   justify-content: stretch;
   height: 106.7rem;
@@ -123,6 +129,7 @@ html {
   height: 95.6rem;
   object-fit: contain;
   box-sizing: border-box;
+  justify-content: space-around;
 }
 
 .signin-page-column {
@@ -131,7 +138,7 @@ html {
   width: 56.8rem;
   height: 61.4rem;
   justify-content: space-around;
-  border: 3px solid lightgray;
+  /* border: 3px solid lightgray; */
 }
 
 .signin-page-text {
