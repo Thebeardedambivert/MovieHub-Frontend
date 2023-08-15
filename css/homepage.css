@@ -1,0 +1,942 @@
+:root {
+  --color-body: #807d7e;
+  --color-primary: #47acdf;
+  --color-headings: #3c4242;
+  --color-notifications: rgba(102, 102, 102, 0.8);
+}
+
+body {
+  margin: 10px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3.4rem;
+}
+
+.navbar-logo {
+  justify-self: flex-start;
+  width: 94px;
+  height: 45px;
+  display: inline-block;
+}
+
+.nav-links {
+  display: inline-flex;
+  width: 48.2rem;
+  height: 2.6rem;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.rent-movies-text {
+  color: var(--color-body);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0;
+  margin: 0;
+}
+
+.watch-movies-text {
+  color: var(--color-body);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0;
+  margin: 0;
+}
+
+.my-movies-text {
+  color: #3c4242;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0;
+  margin: 0;
+}
+
+.liked-movies-text {
+  color: var(--color-body);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0;
+  margin: 0;
+}
+
+.all-movies-text {
+  color: var(--color-body);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navbar-search {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.2rem;
+  justify-self: center;
+  border: none;
+  border-radius: 8px;
+  width: 26.7rem;
+  height: 4.6rem;
+  position: relative;
+  box-sizing: content-box;
+  justify-content: center;
+}
+
+.navbar-text {
+  font-size: 18px;
+  padding-right: 1.6rem;
+  color: var(--color-body);
+  outline: none;
+  box-sizing: content-box;
+  border: 0;
+  background-color: inherit;
+  width: 5.6rem;
+  height: 2.2rem;
+  margin-left: 1.2rem;
+}
+
+.navbar-search-icon {
+  object-fit: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar-icons {
+  display: inline-flex;
+  width: 15.8rem;
+  height: 4.4rem;
+  gap: 1.2rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.heart {
+  padding: 1.2rem;
+}
+
+.user {
+  padding: 1.2rem;
+}
+
+.cart {
+  padding: 1.2rem;
+}
+
+/* Hero */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  height: 71.6px;
+  padding: 38rem 137.8rem 31.6rem 5.1rem;
+  background: url(/images/wolverine.png) lightgray 50% / cover no-repeat;
+  margin-top: 2rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.hero-content-text {
+  flex-direction: column;
+  display: inline-flex;
+  width: 43.9rem;
+  height: 45.5rem;
+  justify-content: space-around;
+  gap: 4rem;
+  margin-bottom: 8rem;
+  margin-left: 6rem;
+}
+
+.rent-watch-text {
+  color: #a8adb0;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.7771rem;
+  letter-spacing: 0.0157rem;
+  text-transform: capitalize;
+  width: 21.1rem;
+  height: 3.1rem;
+  margin: 0;
+}
+
+.hd-option {
+  color: #a8adb0;
+  font-size: 7.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 9.3622rem;
+  letter-spacing: 0.0315rem;
+  width: 43.9rem;
+  margin: 0;
+}
+
+.genre-text {
+  color: #a8adb0;
+  width: 30.8rem;
+  height: 4.8rem;
+  padding-right: 2rem;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.7214rem;
+  letter-spacing: 0.0315rem;
+  margin: 0;
+}
+
+.hero-button {
+  color: #a8adb0;
+  display: inline-flex;
+  width: 25rem;
+  height: 6.1rem;
+  justify-content: center;
+  align-content: center;
+  padding: 1.6rem 7.2rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+}
+
+.hero-button-text {
+  color: #3c4242;
+  text-align: center;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Grid section */
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  margin-top: 13rem;
+  margin-left: 13rem;
+  margin-left: 13rem;
+  grid-template-areas:
+    "deal-zone" "for-you" "new-arrivals" "new-arrivals2" "movies-for-boo" "movies-for-boo2"
+    "top-rated" "rewatch"
+    "genres" "reviews";
+  gap: 13rem;
+  justify-content: center;
+}
+
+/* to-do: remember to use that feature of alternating disappearing cards that Mide sent to you.*/
+/* Deals section */
+.deals-section {
+  display: inline-flex;
+  width: 123.98682rem;
+  height: 35.62023rem;
+  justify-content: space-between;
+  justify-self: center;
+  gap: 3rem;
+  grid-area: deal-zone;
+}
+
+.left-deal-section {
+  display: inline-flex;
+  width: 60.0931rem;
+  height: 35.58436rem;
+  border-radius: 1.2rem;
+}
+
+.left-deal-image {
+  background-image: url(/images/deadpool-v7.png);
+  background-repeat: no-repeat;
+  background-size: 60.0931rem 40.58436rem;
+  width: 60.0931rem;
+  height: 35.58436rem;
+  border: none;
+  border-radius: 1.2rem 1.2rem;
+}
+
+.right-deal-section {
+  display: inline-flex;
+  width: 60.4931rem;
+  height: 35.58436rem;
+  border-radius: 1.2rem;
+}
+
+.right-deal-image {
+  background-image: url(/images/venom_ver5.jpg);
+  background-size: contain;
+  width: 25rem;
+  height: 35.58436rem;
+  border: none;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+
+.right-deal-colour {
+  background-color: black;
+  width: 38rem;
+  height: 35.58436rem;
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+
+/* To-do: In this section and others like it, when we hover on it, the rent or buy button should be displayed while the image becomes 
+blurry. */
+/* For You */
+.for-you-section {
+  grid-area: for-you;
+}
+
+.for-you-section-container {
+  display: inline-flex;
+  /* border: 3px solid black; */
+  width: 123.8586rem;
+  height: 41.56668rem;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.for-you-text-container {
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.blue-rectangle {
+  display: inline-flex;
+  width: 0.6rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: var(--color-primary);
+}
+
+.for-you-text {
+  width: 39.4rem;
+  height: 3.1rem;
+  color: #3c4242;
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.35rem;
+  letter-spacing: 0.068rem;
+  margin: 0;
+}
+
+.for-you-image-container {
+  display: inline-flex;
+  /* border: 3px solid black; */
+  width: 116.7rem;
+  height: 31.96668rem;
+  gap: 3.86rem;
+}
+
+.image-1-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 26.28149rem;
+  height: 31.96668rem;
+  /* border: 3px solid black; */
+}
+
+.image-1 {
+  width: 26.28149rem;
+  height: 26.28149rem;
+  /* border: 3px solid black; */
+  background-image: url(/images/the\ gray\ man.png);
+  background-size: cover;
+  border-radius: 1.2rem;
+}
+
+.image-1-title {
+  color: #3c4242;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.image-2-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 26.28149rem;
+  height: 31.96668rem;
+  /* border: 3px solid black; */
+}
+
+.image-2 {
+  width: 26.28149rem;
+  height: 26.28149rem;
+  /* border: 3px solid black; */
+  background-image: url(/images/oppenheimer_ver3.jpg);
+  background-size: cover;
+  border-radius: 1.2rem;
+}
+
+.image-2-title {
+  color: #3c4242;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.image-3-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 26.28149rem;
+  height: 31.96668rem;
+  /* border: 3px solid black; */
+}
+
+.image-3 {
+  width: 26.28149rem;
+  height: 26.28149rem;
+  /* border: 3px solid black; */
+  background-image: url(/images/carjacked.jpg);
+  background-size: cover;
+  border-radius: 1.2rem;
+}
+
+.image-3-title {
+  color: #3c4242;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.image-4-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 26.28149rem;
+  height: 31.96668rem;
+  /* border: 3px solid black; */
+}
+
+.image-4 {
+  width: 26.28149rem;
+  height: 26.28149rem;
+  /* border: 3px solid black; */
+  background-image: url(/images/macbeth.jpg);
+  background-size: cover;
+  border-radius: 1.2rem;
+}
+
+.image-4-title {
+  color: #3c4242;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.02rem;
+  justify-self: center;
+  align-self: center;
+}
+
+/* New arrivals zone */
+.new-arrivals {
+  grid-area: new-arrivals new-arrivals2;
+}
+
+.new-arrivals-section-container {
+  display: grid;
+  border: 3px solid black;
+  width: 124rem;
+  height: 90.80001rem;
+  grid-template-rows: 121px 393px 393px;
+  grid-template-areas: "new-arrivals-text " "small-image-row " "big-image-row";
+}
+
+.section-text-container {
+  display: inline-flex;
+  width: 39.4rem;
+  height: 3.1rem;
+  gap: 2rem;
+  grid-area: new-arrivals-text;
+}
+.section-text {
+  width: 39.4rem;
+  height: 3.1rem;
+  color: #3c4242;
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.35rem;
+  letter-spacing: 0.068rem;
+  margin: 0;
+}
+
+.new-arrivals-small-images-section {
+  grid-area: small-image-row;
+}
+
+.new-arrivals-small-images-container {
+  display: inline-flex;
+  border: 3px solid black;
+  width: 124rem;
+  height: 39.4rem;
+  gap: 2rem;
+}
+
+.new-arrivals-image-1 {
+  width: 40rem;
+  height: 39.3rem;
+  border-radius: 1.2rem;
+  border: 3px solid black;
+}
+
+.new-arrivals-image-2 {
+  width: 40rem;
+  height: 39.3rem;
+  border-radius: 1.2rem;
+  border: 3px solid black;
+}
+
+.new-arrivals-image-3 {
+  width: 40rem;
+  height: 39.3rem;
+  border-radius: 1.2rem;
+  border: 3px solid black;
+}
+
+.new-arrivals-big-images-section {
+  grid-area: big-image-row;
+}
+
+.new-arrivals-big-images-container {
+  display: inline-flex;
+  width: 124rem;
+  height: 39.4rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.new-arrivals-image-4 {
+  width: 61rem;
+  height: 39.3rem;
+  border-radius: 1.2rem;
+  border: 3px solid black;
+}
+
+.new-arrivals-image-5 {
+  width: 61rem;
+  height: 39.3rem;
+  border-radius: 1.2rem;
+  border: 3px solid black;
+}
+
+/* Movies for boo section */
+
+.movies-for-boo-section {
+  grid-area: movies-for-boo movies-for-boo2;
+}
+
+.movies-for-boo-section-container {
+  display: inline-flex;
+  gap: 7rem;
+  flex-direction: column;
+  border: 3px solid black;
+  width: 129.99999rem;
+  height: 72.00564rem;
+}
+
+.movies-for-boo-image-container {
+  display: inline-flex;
+  flex-direction: row;
+  border: 3px solid black;
+  width: 129.99999rem;
+  height: 63.9723rem;
+}
+
+.left-boo-movie-image-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  width: 69.39972rem;
+  height: 63.97234rem;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+
+.right-boo-movie-image-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  width: 69.39972rem;
+  height: 63.97234rem;
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+
+.movies-for-boo-image-items-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 3px solid black;
+  width: 46.6rem;
+  height: 28.2rem;
+}
+
+.image-text-header {
+  width: 46.6rem;
+  height: 8.4rem;
+  color: #000;
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 5rem;
+  letter-spacing: 0.0208rem;
+}
+
+.image-text {
+  width: 45.1rem;
+  height: 7.2rem;
+  color: #000;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+
+.movies-for-boo-button {
+  padding: 1.2rem 4.4rem;
+  width: 16.8rem;
+  height: 4.6rem;
+}
+
+.movies-for-boo-text {
+  margin: 0;
+}
+
+/* Top-rated Section*/
+
+.top-rated {
+  grid-area: top-rated;
+}
+
+.top-rated-container {
+  width: 124rem;
+  height: 105.4rem;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.top-rated-images-container {
+  width: 123.9rem;
+  height: 95.2rem;
+  border: 3px solid black;
+}
+
+.top-rated-images-row-container {
+  display: inline-flex;
+  gap: 5.03rem;
+  width: 123.9rem;
+  height: 45.1rem;
+  border: 3px solid black;
+}
+
+.top-rated-image-container {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.top-rated-image-1 {
+  width: 27.0365rem;
+  height: 39.32577rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 1.56rem;
+}
+.top-rated-image-2 {
+  width: 27.0365rem;
+  height: 39.32577rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 1.56rem;
+}
+.top-rated-image-3 {
+  width: 27.0365rem;
+  height: 39.32577rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 1.56rem;
+}
+.top-rated-image-4 {
+  width: 27.0365rem;
+  height: 39.32577rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 1.56rem;
+}
+
+.top-rated-image-text {
+  width: 17.9312rem;
+  height: 2.011rem;
+  color: #2a2f2f;
+  font-size: 1.7875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.793rem;
+  letter-spacing: -0.0715rem;
+  align-self: center;
+}
+
+/* Rewatch Section */
+.rewatch {
+  grid-area: rewatch;
+}
+
+.rewatch-container {
+  width: 124rem;
+  height: 46rem;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.rewatch-images-container {
+  width: 123.9rem;
+  height: 95.2rem;
+  border: 3px solid black;
+}
+
+.rewatch-images-row-container {
+  display: inline-flex;
+  gap: 5.03rem;
+  width: 123.9rem;
+  height: 45.1rem;
+  border: 3px solid black;
+}
+
+.rewatch-image-container {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.rewatch-image-1 {
+  width: 27.0365rem;
+  height: 39.32577rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 1.56rem;
+}
+
+.rewatch-image-2 {
+  width: 27.0365rem;
+  height: 39.32577rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 1.56rem;
+}
+
+.rewatch-image-3 {
+  width: 27.0365rem;
+  height: 39.32577rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 1.56rem;
+}
+
+.rewatch-image-4 {
+  width: 27.0365rem;
+  height: 39.32577rem;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 1.56rem;
+}
+
+.rewatch-image-text {
+  width: 17.9312rem;
+  height: 2.011rem;
+  color: #2a2f2f;
+  font-size: 1.7875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.793rem;
+  letter-spacing: -0.0715rem;
+  align-self: center;
+}
+
+/* Genres */
+.genres {
+  grid-area: genres;
+}
+
+.genre-container {
+  display: inline-flex;
+  flex-direction: column;
+  border: 3px solid black;
+  width: 123.3rem;
+  height: 35.7174rem;
+  border-radius: 1.2rem;
+  background: #3c4242;
+  align-items: center;
+  gap: 7rem;
+  margin-top: 13rem;
+}
+
+.genre-text-container {
+  width: 40.9rem;
+  height: 4.9rem;
+}
+
+.genre-text {
+  color: #fff;
+  text-align: center;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.genre-list-container {
+  display: inline-flex;
+  width: 89rem;
+  height: 8.6rem;
+  border: 3px solid white;
+  justify-self: end;
+  gap: 2.4rem;
+}
+
+.genre-image-1-container {
+  width: 17.8rem;
+  height: 8.6rem;
+  border: 3px solid white;
+  border-radius: 1.2rem;
+}
+
+.genre-image-2-container {
+  width: 17.8rem;
+  height: 8.6rem;
+  border: 3px solid white;
+  border-radius: 1.2rem;
+}
+
+.genre-image-3-container {
+  width: 17.8rem;
+  height: 8.6rem;
+  border: 3px solid white;
+  border-radius: 1.2rem;
+}
+
+.genre-image-4-container {
+  width: 17.8rem;
+  height: 8.6rem;
+  border: 3px solid white;
+  border-radius: 1.2rem;
+}
+
+.genre-image-5-container {
+  width: 17.8rem;
+  height: 8.6rem;
+  border: 3px solid white;
+  border-radius: 1.2rem;
+}
+
+/* Reviews Section */
+
+.reviews {
+  grid-area: reviews;
+}
+
+.reviews-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 124rem;
+  height: 43.09rem;
+  gap: 7rem;
+  border: 3px solid black;
+}
+
+.review-card-list-container {
+  display: inline-flex;
+  width: 123.7rem;
+  height: 29.3rem;
+  gap: 2.3194rem;
+  border: 1.8px solid #bebcbd;
+}
+
+.card-details-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 39.6874rem;
+  gap: 2rem;
+  border-radius: 1.2rem;
+  border: 3px solid black;
+  padding: 2.3194rem;
+}
+
+.card-image-stars-container {
+  display: inline-flex;
+  width: 35.1rem;
+  height: 5.8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-image {
+  background-image: url(/images/review-image.png);
+  width: 5.8rem;
+  height: 5.8rem;
+  display: inline-block;
+}
+
+.card-stars-container {
+  display: inline-flex;
+  width: 13.14rem;
+  height: 2.4rem;
+}
+
+.name {
+  color: #3c4242;
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+}
+
+.card-reviews-container {
+  overflow: hidden;
+  color: #807d7e;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.028rem;
+}
