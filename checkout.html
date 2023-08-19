@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/checkout.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-items">
+        <div class="navbar-logo-container">
+          <img class="navbar-logo" src="/images/cropped-image.png" alt="" />
+        </div>
+        <div class="nav-links">
+          <ul class="rent-movies-text">
+            Rent Movies
+          </ul>
+          <ul class="watch-movies-text">
+            Watch Movies
+          </ul>
+          <ul class="my-movies-text">
+            My Movies
+          </ul>
+          <ul class="liked-movies-text">
+            Liked Movies
+          </ul>
+          <ul class="all-movies-text">
+            All Movies
+          </ul>
+        </div>
+        <button class="navbar-search">
+          <div class="navbar-search-icon">
+            <img src="/images/search.svg" alt="" />
+          </div>
+          <input type="text" placeholder="Search" class="navbar-text" />
+        </button>
+        <div class="navbar-icons">
+          <div class="heart-container">
+            <div class="heart-image"></div>
+          </div>
+          <div class="user-container">
+            <div class="user-image"></div>
+          </div>
+          <div class="cart-container">
+            <div class="cart-image"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="grid-section">
+      <div class="grid-container">
+        <section class="account-navigation-section">
+          <div class="account-navigation-container">
+            <p class="navigation-text">Home</p>
+            <div class="left-stroke"></div>
+            <p class="navigation-text">My Account</p>
+            <div class="left-stroke"></div>
+            <p class="navigation-text">Checkout</p>
+          </div>
+        </section>
+        <section class="checkout-section">
+          <div class="checkout-container">
+            <section class="section-text-container">
+              <div class="blue-rectangle"></div>
+              <p class="section-text">Check Out</p>
+            </section>
+            <div class="checkout-column-grid">
+              <section class="billing-details-column">
+                <div class="billing-details-container">
+                  <h1 class="section-header">Billing Details</h1>
+                  <div class="billing-form-container">
+                    <form class="billing-form">
+                      <div class="form-group">
+                        <div class="form-one">
+                          <label for="first-name">First Name</label>
+                          <input
+                            id="first-name"
+                            type="text"
+                            placeholder="First Name"
+                          />
+                        </div>
+                        <div class="form-two">
+                          <label for="last-name">Last Name</label>
+                          <input
+                            id="last-name"
+                            type="text"
+                            placeholder="Last Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-one">
+                          <label for="country">Country / Region</label>
+                          <input
+                            id="country"
+                            type="text"
+                            placeholder="Country / Region"
+                          />
+                        </div>
+                        <div class="form-two">
+                          <label for="company">Company Name</label>
+                          <input
+                            id="company"
+                            type="text"
+                            placeholder="Company (optional)"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-one">
+                          <label for="street">Street Address*</label>
+                          <input
+                            id="street"
+                            type="text"
+                            placeholder="House number and street name"
+                          />
+                        </div>
+                        <div class="form-two">
+                          <label for="apt">Apt, suite, unit</label>
+                          <input
+                            id="apt"
+                            type="text"
+                            placeholder="apartment, suite, unit, etc. (optional)"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-one">
+                          <label for="city">City*</label>
+                          <input
+                            id="city"
+                            type="text"
+                            placeholder="Town / City"
+                          />
+                        </div>
+                        <div class="form-two">
+                          <label for="state">State</label>
+                          <input
+                            id="state"
+                            type="text"
+                            list="statename"
+                            autocomplete="off"
+                            placeholder="State"
+                          />
+                          <datalist id="statename">
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Abuja">Abuja</option>
+                            <option value="Uyo">Uyo</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Imo">Imo</option>
+                          </datalist>
+                        </div>
+                        <div class="form-two">
+                          <label for="postal-code">Postal Code</label>
+                          <input
+                            id="postal-code"
+                            type="text"
+                            placeholder="Postal Code"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-one">
+                          <label for="phone">Phone*</label>
+                          <input id="phone" type="text" placeholder="Phone" />
+                        </div>
+                      </div>
+                    </form>
+                    <div class="submit">
+                      <button class="delivery" type="submit">
+                        Continue to delivery
+                      </button>
+                      <input
+                        type="checkbox"
+                        class="custom-checkbox"
+                        id="myCheckbox"
+                      />
+                      <label for="myCheckbox" id="checkbox-text"
+                        >Save my information for a faster checkout</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="order-summary-column">
+                <div class="order-summary-container">
+                  <h1 class="order-section-header">Order Summary</h1>
+                  <div class="divider"></div>
+                  <div class="order-product-summary">
+                    <div class="product-image"></div>
+                    <div class="product-detail">
+                      <div class="product-title-quantity">
+                        Title: House of cards <span class="quantity">x1</span>
+                      </div>
+                      <div class="genre">Genre: Suspense, Thriller</div>
+                      <div class="age-rating">Rated: 18</div>
+                      <div class="price">Price: $4.00</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="order-product-summary">
+                    <div class="product-image"></div>
+                    <div class="product-detail">
+                      <div class="product-title-quantity">
+                        Title: Deadpool <span class="quantity">x2</span>
+                      </div>
+                      <div class="genre">Genre: Action, Superhero</div>
+                      <div class="age-rating">Rated: 18</div>
+                      <div class="price">Price: $6</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="order-product-summary">
+                    <div class="product-image"></div>
+                    <div class="product-detail">
+                      <div class="product-title-quantity">
+                        Title: Billions <span class="quantity">x8</span>
+                      </div>
+                      <div class="genre">Genre: Thriller, Drama</div>
+                      <div class="age-rating">Rated: 16</div>
+                      <div class="price">Price: $3.00</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="total-container">
+                    <table class="total-table">
+                      <tbody class="subtotal-savings-row">
+                        <tr class="data">
+                          <td class="data-title">Subtotal (3 items)</td>
+                          <td class="data-int">$13.00</td>
+                        </tr>
+                        <tr class="data">
+                          <td class="data-title">Savings</td>
+                          <td class="data-int">$14.00</td>
+                        </tr>
+                      </tbody>
+                      <div class="divider"></div>
+                      <tbody class="shipping-row">
+                        <tr class="data">
+                          <td class="data-title">Shipping</td>
+                          <td class="data-int">$4.00</td>
+                        </tr>
+                      </tbody>
+                      <div class="divider"></div>
+                      <tfoot class="total-row">
+                        <tr class="data">
+                          <td class="data-title">Total</td>
+                          <td class="data-int">$3.00</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+        <section class="shipping-address-section">
+          <section class="shipping-address-container">
+            <div class="header-container">
+              <div class="header-title">Shipping Address</div>
+              <div class="header-instruction">
+                Select the address that matches your card or payment method
+              </div>
+            </div>
+            <section class="choice-container">
+              <div class="shipping-choices">
+                <div class="choices">
+                  <input
+                    type="radio"
+                    name="radio-choice"
+                    id="same-billing-address"
+                  />
+                  <label for="same-billing-address">
+                    Same as Billing address
+                  </label>
+                </div>
+                <div class="divider-choices"></div>
+                <div class="choices">
+                  <input
+                    type="radio"
+                    name="radio-choice"
+                    id="different-address"
+                  />
+                  <label for="different-address">
+                    Use a different shipping address
+                  </label>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="shipping-method-container">
+            <div class="header-container">
+              <div class="header-title">Shipping Method</div>
+            </div>
+            <section class="choice-container">
+              <div class="shipping-choices">
+                <p class="choice-text">Arrives by Monday, June 7</p>
+                <div class="divider-choices"></div>
+                <div class="choice-text-container">
+                  <div class="delivery-charges-price">
+                    <p class="delivery-charges">Delivery Charges</p>
+                    <p class="delivery-price">$4.00</p>
+                  </div>
+                  <p class="delivery-charges-instruction">
+                    Delivery charges may apply
+                  </p>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="payment-method-container">
+            <div class="header-container">
+              <div class="header-title">Payment Method</div>
+              <div class="header-instruction">
+                All transactions are secure and encrypted
+              </div>
+            </div>
+            <section class="credit-card-choice-container">
+              <div class="credit-card-choices">
+                <div class="choices">
+                  <input type="radio" name="radio-choice" id="credit-card" />
+                  <label for="credit-card"> Credit Card </label>
+                  <p class="header-instruction">
+                    We accept all major credit cards
+                  </p>
+                  <div class="credit-card-buttons">
+                    <buttton class="payment-options">
+                      <div class="pay-option-1"></div>
+                    </buttton>
+                    <buttton class="payment-options">
+                      <div class="pay-option-2"></div>
+                    </buttton>
+                    <buttton class="payment-options">
+                      <div class="pay-option-3"></div>
+                    </buttton>
+                    <buttton class="payment-options">
+                      <div class="pay-option-4"></div>
+                    </buttton>
+                  </div>
+                  <form class="card-form-container">
+                    <input
+                      class="card-form"
+                      type="text"
+                      placeholder="Card number"
+                    />
+                    <input
+                      class="card-form"
+                      type="text"
+                      placeholder="Name of card"
+                    />
+                    <input
+                      class="card-form"
+                      type="text"
+                      placeholder="Expiration date(MM/YY)"
+                    />
+                    <input
+                      class="card-form"
+                      type="text"
+                      placeholder="Security code"
+                    />
+                  </form>
+                  <div class="divider"></div>
+                </div>
+                <div class="choices">
+                  <input
+                    type="radio"
+                    name="radio-choice"
+                    id="cash-on-delivery"
+                  />
+                  <label for="cash-on-delivery"> Cash on delivery </label>
+                  <p class="header-instruction">Pay with cash upon delivery</p>
+                </div>
+                <div class="divider"></div>
+                <div class="choices">
+                  <input type="radio" name="radio-choice" id="opay" />
+                  <label for="opay"> Opay </label>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </div>
+      <section class="pay-now-section">
+        <button class="pay-now" type="submit">Pay Now</button>
+      </section>
+    </section>
+  </body>
+</html>
