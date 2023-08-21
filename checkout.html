@@ -297,101 +297,134 @@
               </div>
             </section>
           </section>
-          <section class="shipping-method-container">
-            <div class="header-container">
-              <div class="header-title">Shipping Method</div>
+        </section>
+        <section class="shipping-method-container">
+          <div class="shipping-method-header">
+            <div class="header-title">Shipping Method</div>
+          </div>
+          <section class="choice-container">
+            <div class="choice-text-container">
+              <p class="method-choice-text">Arrives by Monday, June 7</p>
+              <div class="divider-choices"></div>
+              <div class="price-instruction-container">
+                <div class="delivery-charges-price">
+                  <p class="method-choice-text">Delivery Charges</p>
+                  <p class="method-choice-text">$4.00</p>
+                </div>
+                <p class="delivery-charges-instruction">
+                  Delivery charges may apply
+                </p>
+              </div>
             </div>
-            <section class="choice-container">
-              <div class="shipping-choices">
-                <p class="choice-text">Arrives by Monday, June 7</p>
-                <div class="divider-choices"></div>
-                <div class="choice-text-container">
-                  <div class="delivery-charges-price">
-                    <p class="delivery-charges">Delivery Charges</p>
-                    <p class="delivery-price">$4.00</p>
-                  </div>
-                  <p class="delivery-charges-instruction">
-                    Delivery charges may apply
-                  </p>
+          </section>
+          <div class="divider-choices"></div>
+        </section>
+        <section class="payment-method-section">
+          <div class="payment-method-container">
+            <div class="payment-method-header">
+              <div class="header-container">
+                <div class="header-title">Payment Method</div>
+                <div class="header-instruction">
+                  All transactions are secure and encrypted.
                 </div>
               </div>
-            </section>
-          </section>
-          <section class="payment-method-container">
-            <div class="header-container">
-              <div class="header-title">Payment Method</div>
-              <div class="header-instruction">
-                All transactions are secure and encrypted
-              </div>
             </div>
-            <section class="credit-card-choice-container">
-              <div class="credit-card-choices">
-                <div class="choices">
-                  <input type="radio" name="radio-choice" id="credit-card" />
-                  <label for="credit-card"> Credit Card </label>
-                  <p class="header-instruction">
-                    We accept all major credit cards
-                  </p>
-                  <div class="credit-card-buttons">
-                    <buttton class="payment-options">
-                      <div class="pay-option-1"></div>
-                    </buttton>
-                    <buttton class="payment-options">
-                      <div class="pay-option-2"></div>
-                    </buttton>
-                    <buttton class="payment-options">
-                      <div class="pay-option-3"></div>
-                    </buttton>
-                    <buttton class="payment-options">
-                      <div class="pay-option-4"></div>
-                    </buttton>
+            <div class="payment-choices-outer-container">
+              <div class="payment-choices-inner-container">
+                <section class="credit-card-option-container">
+                  <div class="payment-method-header-container">
+                    <input
+                      type="radio"
+                      name="radio-choice"
+                      id="credit-card-choice"
+                    />
+                    <div class="payment-method-choices">
+                      <label
+                        id="credit-card-choice-label"
+                        for="credit-card-choice"
+                      >
+                        Credit Card
+                      </label>
+                      <div class="choice-instruction">
+                        We accept all major credit cards.
+                      </div>
+                    </div>
                   </div>
-                  <form class="card-form-container">
-                    <input
-                      class="card-form"
-                      type="text"
-                      placeholder="Card number"
-                    />
-                    <input
-                      class="card-form"
-                      type="text"
-                      placeholder="Name of card"
-                    />
-                    <input
-                      class="card-form"
-                      type="text"
-                      placeholder="Expiration date(MM/YY)"
-                    />
-                    <input
-                      class="card-form"
-                      type="text"
-                      placeholder="Security code"
-                    />
+                  <div class="credit-card-button-option-container">
+                    <button
+                      class="credit-card-button-option-one"
+                      type="submit"
+                    ></button
+                    ><button
+                      class="credit-card-button-option-two"
+                      type="submit"
+                    ></button
+                    ><button
+                      class="credit-card-button-option-three"
+                      type="submit"
+                    ></button
+                    ><button
+                      class="credit-card-button-option-four"
+                      type="submit"
+                    ></button>
+                  </div>
+                  <form class="credit-card-form">
+                    <div class="form-group">
+                      <div class="form-one"></div>
+                      <div class="form-two"></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-one"></div>
+                      <div class="form-two"></div>
+                    </div>
                   </form>
-                  <div class="divider"></div>
-                </div>
-                <div class="choices">
-                  <input
-                    type="radio"
-                    name="radio-choice"
-                    id="cash-on-delivery"
-                  />
-                  <label for="cash-on-delivery"> Cash on delivery </label>
-                  <p class="header-instruction">Pay with cash upon delivery</p>
-                </div>
-                <div class="divider"></div>
-                <div class="choices">
-                  <input type="radio" name="radio-choice" id="opay" />
-                  <label for="opay"> Opay </label>
-                </div>
+                  <div class="divider-choices"></div>
+                </section>
+                <section class="cash-on-delivery-option-container">
+                  <div class="payment-method-header-container">
+                    <input
+                      type="radio"
+                      name="radio-choice"
+                      id="cash-on-delivery"
+                    />
+                    <div class="payment-method-choices">
+                      <label
+                        class="cash-on-delivery-label"
+                        for="cash-on-delivery"
+                      >
+                        Cash on delivery</label
+                      >
+                      <div class="choice-instruction">
+                        Pay with cash upon delivery.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="divider-choices"></div>
+                </section>
+                <section class="opay-option-container">
+                  <div class="payment-method-header-container">
+                    <input
+                      type="radio"
+                      name="radio-choice"
+                      id="credit-card-choice"
+                    />
+                    <div class="payment-method-choices">
+                      <label class="opay-label" for="credit-card-choice">
+                        Opay
+                      </label>
+                    </div>
+                  </div>
+                </section>
               </div>
-            </section>
-          </section>
+            </div>
+          </div>
+        </section>
+        <section class="pay-now-section">
+          <button class="pay-now" type="submit">
+            <div class="pay-now-text">Pay Now</div>
+          </button>
         </section>
       </div>
-      <section class="pay-now-section">
-        <button class="pay-now" type="submit">Pay Now</button>
-      </section>
     </section>
   </body>
 </html>

@@ -646,6 +646,9 @@ table {
 /* Delivery Section */
 .shipping-address-section {
   grid-area: shipping-method-section;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .shipping-address-container {
@@ -721,13 +724,250 @@ table {
   border: 3px solid black;
 }
 
+.shipping-method-header {
+  width: 23.2;
+  height: 3.1rem;
+  color: var(--color-headings);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 3.35rem;
+  letter-spacing: 0.044rem;
+}
+
+.choice-text-container {
+  flex-direction: column;
+  display: inline-flex;
+  width: 76.6rem;
+  height: 12.5rem;
+  margin-left: 2.6rem;
+  justify-content: space-between;
+}
+
+.method-choice-text {
+  color: #3c4242;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.delivery-charges-price {
+  display: inline-flex;
+  width: 76.7rem;
+  height: 2.4rem;
+  gap: 56.5rem;
+}
+
+.delivery-charges-instruction {
+  color: #807d7e;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.price-instruction-container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: space-between;
+  height: 5.1rem;
+}
+
 /* Payment Section */
 
 .payment-method-container {
   display: inline-flex;
   flex-direction: column;
-  grid-area: payment-section;
-  height: 67rem;
-  width: 85rem;
+  width: 84rem;
+  height: 66rem;
+  gap: 3rem;
   border: 3px solid black;
+}
+
+.payment-choices-outer-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 56.7rem;
+  width: 84rem;
+  border: 3px solid black;
+  border-radius: 1.6rem;
+  background: #f6f6f6;
+}
+
+.payment-choices-inner-container {
+  display: inline-flex;
+  background: inherit;
+  border: 3px solid black;
+  width: 76.4rem;
+  height: 47.7rem;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.credit-card-option-container {
+  display: inline-flex;
+  flex-direction: column;
+  height: 29rem;
+  width: 76.4rem;
+  gap: 3rem;
+  border: 3px solid black;
+}
+
+.payment-method-header-container {
+  display: inline-flex;
+  height: 4.8rem;
+  width: 26.1rem;
+  border: 3px solid black;
+  align-items: center;
+  gap: 1.9rem;
+}
+
+.payment-method-choices {
+  display: inline-flex;
+  justify-self: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 22.4rem;
+  justify-content: center;
+  height: 4.8rem;
+  border: 3px solid black;
+}
+
+#credit-card-choice {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+#credit-card-choice-label {
+  color: #3c4242;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.choice-instruction {
+  color: var(--color-headings);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.cash-on-delivery-label {
+  color: #3c4242;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#cash-on-delivery {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.credit-card-button-option-container {
+  display: inline-flex;
+  width: 38rem;
+  height: 4.6rem;
+  border: 3px solid black;
+  gap: 2rem;
+}
+
+.credit-card-button-option-one {
+  width: 8rem;
+  height: 4.6rem;
+  background-image: url(/images/gpay\ icon.svg);
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+}
+
+.credit-card-button-option-two {
+  width: 8rem;
+  height: 4.6rem;
+  background-image: url(/images/paypal-icon.svg);
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+}
+
+.credit-card-button-option-three {
+  width: 8rem;
+  height: 4.6rem;
+  background-image: url(/images/paypass-icon.svg);
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+}
+
+.credit-card-button-option-four {
+  width: 8rem;
+  height: 4.6rem;
+  background-image: url(/images/visa-icon.svg);
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+}
+
+.credit-card-form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 70.4rem;
+  height: 13.1rem;
+  gap: 2.8rem;
+  border: 3px solid black;
+}
+
+.form-group {
+  display: inline-flex;
+  width: 70.4rem;
+  height: 4.9rem;
+  gap: 3rem;
+}
+
+.form-one {
+  width: 33.7rem;
+  height: 4.9rem;
+  border-radius: 0.8rem;
+  border: 1px solid #3c4242;
+}
+
+.form-two {
+  width: 33.7rem;
+  height: 4.9rem;
+  border-radius: 0.8rem;
+  border: 1px solid #3c4242;
+}
+
+.cash-on-delivery-option-container {
+  display: inline-flex;
+  width: 35rem;
+  height: 7.8rem;
+  border: 3px solid black;
+}
+
+.opay-option-container {
+  display: inline-flex;
+  width: 35rem;
+  height: 7.8rem;
+  border: 3px solid black;
+}
+
+.opay-label {
+  color: #3c4242;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Pay now Section */
+
+.pay-now {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  background-color: var(--color-primary);
+  height: 5.4rem;
+  width: 10.8rem;
+  outline: none;
+  border: 0;
+}
+
+.pay-now-text {
+  margin: 0;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
